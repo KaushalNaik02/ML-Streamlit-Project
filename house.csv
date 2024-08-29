@@ -1,0 +1,45 @@
+#THIS IS THE CSV WE HAVE USE FOR THE LOGISTIC  REGRESSION
+#MALE=1 , FEMALE=0
+#GOVERNMENT=1 , PRIVATE=0
+
+
+
+
+SEX,JOB,SALARY,LOAN,HOUSE_BUY
+Male,Government,15000,900000,0
+Male,Government,25000,700000,0
+Male,Government,35000,600000,0
+Male,Government,60000,200000,1
+Male,Government,70000,100000,1
+Male,Government,90000,0,1
+Male,Government,60000,700000,0
+Male,Government,30000,0,1
+Male,Government,15000,0,0
+Male,Government,100,0,0
+Female,Government,15000,0,0
+Female,Government,30000,200000,1
+Female,Government,60000,600000,0
+Female,Government,70000,100000,1
+Female,Government,70000,900000,0
+Female,Government,80000,0,1
+Female,Government,50000,0,1
+Female,Government,500,0,0
+Male,Private,70000,600000,0
+Male,Private,40000,400000,0
+Male,Private,40000,0,1
+Male,Private,80000,200000,1
+Male,Private,40000,500000,0
+Male,Private,90000,0,1
+Male,Private,2000,0,0
+Male,Private,80000,900000,0
+Female,Private,15000,800000,0
+Female,Private,40000,600000,0
+Female,Private,60000,500000,0
+Female,Private,80000,300000,1
+Female,Private,90000,900000,0
+Female,Private,40000,0,1
+Female,Private,70000,0,1
+Female,Private,90000,0,1
+Female,Private,4000,0,0
+Female,Private,400,0,0
+
