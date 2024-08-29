@@ -47,7 +47,7 @@ if st.button('Predict'):
     columns=['SEX','JOB','SALARY','LOAN']
 )
     
-    st.write(input_data)
+    # st.write(input_data)
     input_data['SEX'].replace(['Male','Female'],[0,1],inplace=True)
     input_data['JOB'].replace(['Government','Private'],[0,1],inplace=True)
 

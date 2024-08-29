@@ -50,7 +50,7 @@ if st.button('Predict'):
     input_data['name'].replace(['santro','ertiga','swift','omni','audi','xuv'],[1,2,3,4,5,6],inplace=True)
     input_data['fuel'].replace(['petrol','diesel','cng'],[1,2,3],inplace=True)
 
-    st.write(input_data)
+    # st.write(input_data)
 
     car_price = model.predict(input_data)
     st.subheader('Car Price Is going To Be : '+str(car_price[0])) 
