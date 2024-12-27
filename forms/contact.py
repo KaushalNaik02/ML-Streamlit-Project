@@ -1,5 +1,7 @@
 import streamlit as st
 import re
+import pandas as pd
+import os
 
 def validate_email(email):
     # Regular expression to validate email
@@ -8,7 +10,19 @@ def validate_email(email):
         return False
     else:
         return True
+    
 
+
+def save_to_csv(name, email, msg, file_name="form_data.csv"):
+    file_path = os.path.abspath(file_name)
+
+    if not os.path.exists(file_path):
+        df = pd.DataFrame(columns=["Name", "Email", "Message"])
+        df.to_csv(file_path, index=False)
+
+    new_data = pd.DataFrame({"Name": [name], "Email": [email], "Message": [msg]})
+    new_data.to_csv(file_path, mode="a", header=False, index=False)
+    # st.write(f"Data saved to: {file_path}")
 
 def contact_form():
     with st.form("contact--form"):
@@ -28,4 +42,20 @@ def contact_form():
                 elif not msg:
                     st.error("Please Enter The Description")
                 else:
+                    save_to_csv(name, email, msg)
                     st.success("Success..I Will Contact You Soon 🤖")
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
